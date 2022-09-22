@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Bootstrap demo</title>
+
+  <style type="text/css"> </style>
+
+</head>
+
+<body>
+
+  <div class="bg-image text-end obj-fit-cover bg obj-fit-cover"
+    style="background-image: url('img/ba1.jpg');min-height:700px;">
+    <!--NOTA: el obj-fit-cover hace que ocupe el ancho de la pantalla, 
+        sino la imagen toma el 100% de su tamaño y se sale para afuera-->
+    <!--NOTA 2: poner si o si el alto de la imagen, si no le pongo el alto  
+      solamente llega en alto hasta donde llegue el contenido
+      -->
+
+
+    <header>
+      <!-- ============================================================================ -->
+      <div class="container-fluid p-0">
+            <!-- Nota: el p-0 es para sacar el padding y que no quede espacio al principio y final de la navbar -->
+
+        <!-- ============================================================================ -->
+
+        <!-- nav bar // Nota: no poner rows y cols, hacerlo como dice bootstrap-->
+        <nav class="navbar navbar-dark bg-dark">
+          <!-- Nota: el FLUID del container es para que ocupe el 100% de ancho de pantalla-->
+          <div class="container-fluid d-flex justify-content-around">
+
+            <a class="navbar-brand" href="#">
+              <img src="img/codoacodo.png" width="" height="40" class="" alt="">
+              Conf Bs As
+            </a>
+
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active text-white" href="#">La conferencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">El lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary" href="#">Conviertete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="#">Comprar tickets</a>
+              </li>
+            </ul>
+
+          </div>
+
+        </nav>
+
+        <!--NOTA: p-0 le saca el margen a la imagen-->
+
+        <!-- ============================================================================ -->
+        <div class="container-fluid" style="height:700px">
+          <div class="row h-100 v-100 mx-5 text-white">
+            <!--NOTA: h-100 y v-100 hace que la row tome el alto y ancho del container
+                      m- es margin y p- es padding-->
+            <div class="col"></div>
+            <div class="col align-self-center p-5">
+              <!--NOTA: FS- es font size y Fw- es font weight-->
+              <p class="fs-1 fw-semibold">Conf Bs As</p>
+              <p class="fs-6">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus praesentium
+                labore accusamus sequi, voluptate debitis tenetur in deleniti possimus modi voluptatum
+                neque maiores dolorem unde? Aut dolorum quod excepturi fugit.
+              </p>
+              <button type="button" class="btn btn-outline-light">Quiero ser orador</button>
+              <button type="button" class="btn bg-verde-custom2 text-white">Comprar tickets</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  </div>
+
+  </div>
+
+  </header>
+
+  <!-- ============================================================================ -->
+
+  <div class="container mt-3">
+    <!-- 3 fotos-->
+
+    <div class="text-center">
+      <!--NOTA: FS- es font size y Fw- es font weight-->
+      <p class="fs-8 fw-light lh-1 mb-2">CONOCE A LOS</p>
+      <p class="fs-2 fw-semibold lh-1 mb-2">ORADORES</p>
+    </div>
+
+    <div class="row">
+
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="img/steve.jpg" alt="Card image cap">
+          <div class="card-body pt-3 pb-3">
+            <span class="badge text-bg-warning text text-dark">JavaScript</span>
+            <span class="badge text-bg-info text text-white">React</span>
+            <h5 class="card-title pb-3">Steve Jobs</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, repellendus molestias.
+              Esse pariatur praesentium eos itaque explicabo vel saepe magnam harum, magni voluptatibus deserunt
+              consequuntur molestias, cupiditate, iure quia accusamus?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src="img/bill.jpg" alt="Card image cap">
+          <div class="card-body pt-3 pb-3">
+            <!--NOTA: badge son las etiquetas de colores, pueden ser cuadradas o pildoras-->
+            <span class="badge text-bg-warning text-dark">JavaScript</span>
+            <span class="badge text-bg-info text-white">React</span>
+            <h5 class="card-title pb-3">Bill Gates</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, repellendus molestias.
+              Esse pariatur praesentium eos itaque explicabo vel saepe magnam harum, magni voluptatibus deserunt
+              consequuntur molestias, cupiditate, iure quia accusamus?</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" class="img-fluid" src="img/ada.jpeg" alt="Card image cap">
+          <div class="card-body pt-3 pb-3">
+            <span class="badge text-bg-secondary">Negocios</span>
+            <span class="badge text-bg-danger">Startups</span>
+            <h5 class="card-title pb-3">Ada Lovelace</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, repellendus molestias.
+              Esse pariatur praesentium eos itaque explicabo vel saepe magnam harum, magni voluptatibus deserunt
+              consequuntur molestias, cupiditate, iure quia accusamus?</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================================ -->
+
+  <div class="container-fluid mt-4">
+    <!-- 2 fotos-->
+    <div class="row">
+      <div class="col-6 p-0 m-0 g-0">
+        <img class="card-img-top img-fluid" src="img/honolulu.jpg" alt="">
+      </div>
+      <div class="col-6 bg-dark text-white pt-3 pb-3 border border-end border-white">
+        <p class="fs-3 fw-semibold fw-normal">Bs As - Octubre </p>
+        <p class="fs-7 fw-normal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis pariatur deserunt
+          et quo iste modi
+          accusantium maiores dolorum commodi ratione similique rerum eius, totam saepe tempora adipisci odio sequi.
+          Delectus.</p>
+        <button type="button" class="btn btn-outline-light">Conocé más</button>
+
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ============================================================================ -->
+
+  <div class="container col-6 mt-4 mb-4">
+    <!--formulario -->
+    <div class="text-center">
+      <p class="fs-6 fw-light lh-1 m-0">CONVIERTETE EN UN</p>
+      <!--NOTA: el lh es el interlineado-->
+      <p class="fs-2 fw-semibold lh-1 mb-2">ORADOR</p>
+      <p class="fs-6 fw-light lh-1 m-0">Anotate como orador para dar una <span><abbr title="attribute">charla
+            ignite</abbr></span>. Cuentanos de que quieres hablar!
+      </p>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <input class="form-control mt-3" type="text" placeholder="Nombre" aria-label="default input example">
+      </div>
+      <div class="col">
+        <input class="form-control mt-3" type="text" placeholder="Apellido" aria-label="default input example">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <textarea class="form-control mt-3" placeholder="De que quieres hablar?" id="exampleFormControlTextarea1"
+          rows="3"></textarea>
+        <p class="fs-6 fw-light">Recuerda incluir un titulo para tu charla</p>
+      </div>
+    </div>
+
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary bg-verde-custom" type="button">Enviar</button>
+    </div>
+
+
+  </div>
+
+  <!-- ============================================================================ -->
+
+  <footer>
+
+    <div class="foot container-fluid bg-degrade-custom">
+      <!-- nav bar // Nota: no poner rows y cols, 
+        hacer la nav bar como dice el manual de bootstrap-->
+      <nav class="navbar navbar-dark">
+        <!-- Nota: FLUID es para que ocupe el 100% de ancho de pantalla-->
+        <div class="container-fluid mx-5">
+          <ul class="nav text-center align-items-center justify-content-center d-flex justify-content-evenly px-5"
+            style="width:100%;">
+            <!-- NOTA: text-center alinea el texto al centro horizontal,
+            en cambio align-items center lo alinea en vertical
+            justify-content-center hace que todo el contenido de ul se centre horizontal uno al lado del otro
+            d-flex justify-content-evenly hace que se separen en espacios iguales sin llegar al borde
+            px es padding a derecha e izq
+          -->
+            <li class="nav-item">
+              <a class="nav-link active text-white text-center" href="#">Preguntas
+                <br>Frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Contactanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Prensa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Conferencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Terminos y <br>condiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Privacidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#">Estudiantes</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+
+  </footer>
+  <!-- ============================================================================ -->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+  integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+  integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+</body>
+</html>

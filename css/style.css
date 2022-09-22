@@ -1,0 +1,37 @@
+.bg-image {
+    /*codigo para que el background quede mas oscuro*/
+    background-color: rgba(0, 0, 0, 0.522);
+    background-blend-mode: multiply;
+    background-size: cover;
+  }
+
+  .bg-verde-custom {
+    /*color del boton del formulario*/
+    background-color: rgba(150, 201, 62, 255);
+    border-color: rgba(150, 201, 62, 255);
+  }
+
+  .bg-verde-custom2 {
+    /*color del boton de la img del header*/
+    background-color: #29A63C;
+    border-color: #29A63C;
+  }
+
+  .bg-azul-custom {
+    /*color de la barra del footer*/
+    background-color: #1E5170;
+  }
+
+  .fs-7 {
+    /* tamaño de fuente personalizado porque bootstrap llega solo hasta 6 y necesito mas chico */
+    font-size: 14px;
+  }
+
+  .fs-8 {
+    /* tamaño de fuente personalizado porque bootstrap llega solo hasta 6 y necesito mas chico */
+    font-size: 12px;
+  }
+
+  .bg-degrade-custom{
+    background: linear-gradient(to right,#1D3744, #1E5372);
+      }
