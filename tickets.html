@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Bootstrap demo</title>
+
+    <style type="text/css"> </style>
+
+</head>
+
+<body>
+
+    <header>
+        <!-- ============================================================================ -->
+        <div class="container-fluid p-0">
+            <!-- Nota: el p-0 es para sacar el padding y que no quede espacio al principio y final de la navbar -->
+
+            <!-- ============================================================================ -->
+
+            <!-- nav bar // Nota: no poner rows y cols, hacerlo como dice bootstrap-->
+            <nav class="navbar navbar-dark bg-dark">
+                <!-- Nota: el FLUID del container es para que ocupe el 100% de ancho de pantalla-->
+                <div class="container-fluid d-flex justify-content-around">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/codoacodo.png" width="" height="40" class="" alt="">
+                        Conf Bs As
+                    </a>
+
+                    <ul class="nav">
+                        <li class="nav-item">
+                          <a class="nav-link active text-white" href="index.html#conf">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-secondary" href="index.html#ora">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-secondary" href="index.html#lyf">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-secondary" href="index.html#ceo">Conviertete en orador</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-success" href="tickets.html">Comprar tickets</a>
+                        </li>
+                      </ul>
+                </div>
+            </nav>
+        </div>
+
+
+
+        <!--NOTA: p-0 le saca el margen a la imagen-->
+
+        <!-- ============================================================================ -->
+
+
+
+
+
+    </header>
+
+    <!-- ============================================================================ -->
+
+
+    <div class="container-fluid">
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card h-100 border-primary">
+                        <div class="card-body">
+                            <div class="text-center p-3">
+                                <h5 class="card-title">Estudiante</h5>
+                                <small>Tienen un descuento</small>
+                                <br><br>
+                                <span class="h2">80%</span>
+                                <br><br>
+                            </div>
+                            <p class="card-text text-center">* Presentar documentacion</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card h-100 border-success">
+                        <div class="card-body">
+                            <div class="text-center p-3">
+                                <h5 class="card-title">Trainee</h5>
+                                <small>Tienen un descuento</small>
+                                <br><br>
+                                <span class="h2">50%</span>
+                                <br><br>
+                            </div>
+                            <p class="card-text text-center">* Presentar documentacion</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card h-100 border-warning">
+                        <div class="card-body">
+                            <div class="text-center p-3">
+                                <h5 class="card-title">Junior</h5>
+                                <small>Tienen un descuento</small>
+                                <br><br>
+                                <span class="h2">15%</span>
+                                <br><br>
+                            </div>
+                            <p class="card-text text-center">* Presentar documentacion</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <h6 class="text-center">VENTA</h6>
+                <H1 class="text-center">VALOR DEL TICKET: $200</H1>
+            </div>
+
+
+            <div class="row">
+                <form>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <input type="nombre" class="form-control" id="nombre" placeholder="Nombre">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="mb-3">
+                                <input type="apellido" class="form-control" id="apellido" placeholder="Apellido">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Correo">
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
+                                <input type="cantidad" class="form-control" id="cantidad" placeholder="cantidad">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Categoria</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected value="1">Estudiante</option>
+                                    <option value="2">Trainee</option>
+                                    <option value="3">Junior</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="alert alert-primary" role="alert">
+                                <h4>Total a pagar: $</h4>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="submit" class="btn btn-primary btn-block bg-verde-custom mb-3"
+                                style="width:100%;">Borrar</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn btn-primary btn-block bg-verde-custom mb-3"
+                                style="width:100%;">Resumen</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================================ -->
+
+    <footer>
+
+        <div class="foot container-fluid bg-degrade-custom">
+            <nav class="navbar navbar-dark">
+                <div class="container-fluid mx-5">
+                    <ul class="nav text-center align-items-center justify-content-center d-flex justify-content-evenly px-5"
+                        style="width:100%;">
+
+                        <li class="nav-item">
+                            <a class="nav-link active text-white text-center" href="#">Preguntas
+                                <br>Frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contactanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Prensa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Conferencias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Terminos y <br>condiciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Privacidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Estudiantes</a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+
+        </div>
+
+
+    </footer>
+    <!-- ============================================================================ -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
