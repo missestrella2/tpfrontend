@@ -9,7 +9,7 @@
     <title>Bootstrap demo</title>
 
     <style type="text/css"> </style>
-
+    
 </head>
 
 <body>
@@ -124,25 +124,25 @@
 
 
             <div class="row">
-                <form>
+                <form id="forms">
 
                     <div class="row">
                         <div class="col">
                             <div class="mb-3">
-                                <input type="nombre" class="form-control" id="nombre" placeholder="Nombre">
+                                <input type="nombre"  class="form-control" id="nombre" placeholder="Nombre">
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="mb-3">
-                                <input type="apellido" class="form-control" id="apellido" placeholder="Apellido">
+                                <input type="apellido"  class="form-control" id="apellido" placeholder="Apellido">
                             </div>
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="mb-3">
-                            <input type="email" class="form-control" id="email" placeholder="Correo">
+                            <input type="email"  class="form-control" id="email" placeholder="Correo">
                         </div>
                     </div>
 
@@ -153,16 +153,18 @@
                         <div class="col">
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Cantidad</label>
-                                <input type="cantidad" class="form-control" id="cantidad" placeholder="cantidad">
+                                <input type="cantidad" onchange="precioporcantidad()" class="form-control" id="cantidad" placeholder="cantidad">
                             </div>
                         </div>
                         <div class="col">
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Categoria</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected value="1">Estudiante</option>
-                                    <option value="2">Trainee</option>
-                                    <option value="3">Junior</option>
+
+
+                                <label for="exampleFormControlInput1" class="form-label" >Categoria</label>
+                                <select class="form-select" onchange="precioporcategoria()" aria-label="Default select example" id="menu" >
+                                    <option value="1" id="estudiante" >Estudiante</option>
+                                    <option value="2" id="trainee">Trainee</option>
+                                    <option value="3" id="junior">Junior</option>
                                 </select>
                             </div>
                         </div>
@@ -172,7 +174,8 @@
                     <div class="row">
                         <div class="col">
                             <div class="alert alert-primary" role="alert">
-                                <h4>Total a pagar: $</h4>
+                                <h4 id="total">Total a pagar: $</h4>
+                                <h4 id="elprecio"></h4>
                             </div>
                         </div>
                     </div>
@@ -184,13 +187,20 @@
 
                     <div class="row">
                         <div class="col-6">
-                            <button type="submit" class="btn btn-primary btn-block bg-verde-custom mb-3"
+                            <button type="reset" class="btn btn-primary btn-block bg-verde-custom mb-3"
                                 style="width:100%;">Borrar</button>
                         </div>
                         <div class="col-6">
-                            <button type="button" class="btn btn-primary btn-block bg-verde-custom mb-3"
-                                style="width:100%;">Resumen</button>
+                            <button type="button" value="Input" class="btn btn-primary btn-block bg-verde-custom mb-3"
+                                style="width:100%;" onclick="resumen()">Resumen</button>
                         </div>
+                        <h3 id="resumennombre"></h3><h3 id="contnombre"></h3>
+                        <h3 id="resumenapellido"></h3> <h3 id="contapellido"></h3>
+                    </br>
+                        <h3 id="resumencorreo"></h3><h3 id="contcorreo"></h3>
+                        <h3 id="resumencantidad"></h3> <h3 id="contcantidad"></h3>
+                        <h3 id="resumencategoria"></h3><h3 id="contcategoria"></h3>
+                        <h3 id="resumentotal"></h3><h3 id="conttotal"></h3>
                     </div>
                 </form>
             </div>
@@ -250,6 +260,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
         integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
         crossorigin="anonymous"></script>
+    <script src="js/miscript.js"></script>    
 </body>
 
 </html>
